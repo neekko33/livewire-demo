@@ -8,13 +8,18 @@ use Livewire\Component;
 #[Title('Todo List')]
 class Todo extends Component
 {
-    public $todos = [
-        'Take out the trash',
-        'Walk the dog',
-        'Finish the project',
-    ];
+    public $todos = [];
 
     public $newTodo = '';
+
+    public function mount()
+    {
+        $this->todos = ['Learn Livewire', 'Build a Todo App'];
+    }
+
+    public function updatedNewTodo($value) {
+        $this->newTodo = strtoupper($value);
+    }
 
     public function addTodo()
     {
