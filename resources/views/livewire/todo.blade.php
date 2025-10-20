@@ -1,12 +1,12 @@
 <div>
-    <form wire:submit="addTodo">
-        <input type="text" wire:model="newTodo" />
-        <button type="submit">Add Todo</button>
+    <form wire:submit="addTodo" class="mb-4">
+        <input type="text" wire:model="newTodo" class="input" />
+        <button type="submit" class="btn">Add Todo</button>
     </form>
 
-    <ul>
+    <ul class="pl-4">
         @foreach ($todos as $todo)
-            <li>{{ $todo }}</li>
+            <li class="py-2 text-lg list-disc">{{ $todo }}</li>
         @endforeach
     </ul>
 </div>

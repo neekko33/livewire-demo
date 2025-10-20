@@ -9,3 +9,19 @@
     --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
         'Segoe UI Symbol', 'Noto Color Emoji';
 }
+
+.btn {
+    @apply bg-sky-500 text-white rounded-sm px-2 py-1 cursor-pointer;
+}
+
+.input {
+    @apply border rounded-sm mr-2 px-1 py-1;
+}
+
+th, td {
+    @apply border px-2 py-2;
+}
+
+th {
+    @apply bg-sky-100;
+}
