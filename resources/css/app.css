@@ -25,3 +25,7 @@ th, td {
 th {
     @apply bg-sky-100;
 }
+
+.archived {
+    @apply bg-gray-200;
+}

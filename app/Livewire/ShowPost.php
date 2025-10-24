@@ -9,7 +9,7 @@ use Livewire\Component;
 #[Title('Show Posts')]
 class ShowPost extends Component
 {
-    public function deletePost(Post $post)
+    public function delete(Post $post)
     {
         $post->delete();
     }
