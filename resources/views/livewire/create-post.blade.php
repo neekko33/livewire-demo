@@ -13,6 +13,7 @@
         <label class="flex flex-col space-y-1">
             <span>Content</span>
             <textarea class="input" rows="5" wire:model="content"></textarea>
+            <small>Words: <span x-text="$wire.content.split(' ').filter(word => word.length > 0).length"></span></small>
             @error('content')
                 <em class="text-red-500">{{ $message }}</em>
             @enderror
