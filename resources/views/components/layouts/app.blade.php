@@ -14,8 +14,8 @@
         <nav class="h-screen w-[200px] border-r flex flex-col space-y-4 text-xl items-center pt-12">
             {{-- <a href="/" class="{{ request()->is('/') ? 'font-bold' : '' }}">Todo</a>
             <a href="/counter" class="{{ request()->is('counter') ? 'font-bold' : '' }}">Counter</a> --}}
-            <a href="/posts" class="{{ request()->is('posts') ? 'font-bold' : '' }}">Posts</a>
-            <a href="/posts/create" class="{{ request()->is('posts/create') ? 'font-bold' : '' }}">Create Post</a>
+            <a wire:navigate href="/posts" class="{{ request()->is('posts') ? 'font-bold' : '' }}">Posts</a>
+            <a wire:navigate href="/posts/create" class="{{ request()->is('posts/create') ? 'font-bold' : '' }}">Create Post</a>
         </nav>
         <main class="flex-1 p-6">
             {{ $slot }}
